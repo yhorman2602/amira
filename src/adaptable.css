@@ -132,3 +132,57 @@
             margin-bottom: 5px;
             display: block;
 		  }
+
+/* Mejoras específicas para móviles (pantallas <= 768px) */
+@media (max-width: 768px) {
+	.col-3 {
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+
+	.card {
+		margin-bottom: 1rem;
+	}
+
+	img, .card-img-top, .carousel-inner img, .modal-body img {
+		max-width: 100% !important;
+		height: auto !important;
+		object-fit: cover;
+	}
+
+	.card .btn {
+		width: 100%;
+	}
+
+	nav.nav {
+		display: flex;
+		gap: 0.5rem;
+		overflow-x: auto;
+	}
+
+	.navbar .nav-link {
+		padding: 0.5rem 0.75rem;
+		white-space: nowrap;
+	}
+
+	footer .container { padding-left: 1rem; padding-right: 1rem; }
+
+	h1 { font-size: 1.6rem; }
+	h4 { font-size: 1.15rem; }
+
+	.carousel-inner img { max-height: 45vh; }
+
+	table { font-size: 13px; width: 100%; }
+
+	.modal-dialog { max-width: 95%; margin: 1rem auto; }
+
+	.container-fluid img { max-width: 120px; height: auto; }
+}
+	  }
