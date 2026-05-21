@@ -1,0 +1,134 @@
+
+/* Estilos adaptables para todo tipo de tablets */
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    /* Ajuste del nav */
+	/* Estilos para la imagen dentro del contenedor con la clase .logo */
+    .logo img {
+		max-width: 100%; /* La imagen no puede exceder el ancho del contenedor, se ajusta al tamaño disponible */
+		height: auto; /* La altura de la imagen se ajusta automáticamente para mantener la proporción */
+	  }
+  /* Estilos para los enlaces de navegación (clase .nav-link) */
+	  .nav-link {
+		display: flex;/* Utiliza flexbox para organizar los elementos en línea */
+		align-items: center;/* Alinea verticalmente los elementos al centro */
+		gap: 5px; /* Añade un espacio de 5 píxeles entre los elementos dentro del enlace */
+	  }
+  /* Estilos para los iconos dentro de los enlaces de navegación */
+	  .nav-link ion-icon {
+		width: 20px;  /* Establece el ancho de los iconos en 20 píxeles */
+		height: 20px; /* Establece la altura de los iconos en 20 píxeles */
+	  }
+  /* Media query para pantallas con un ancho máximo de 768px (dispositivos móviles) */
+	  @media (max-width: 768px) {
+		nav {
+		  flex-direction: column;/* Cambia la dirección de los elementos en el contenedor nav a columna (vertical) */
+		  align-items: flex-start;/* Alinea los elementos al inicio del contenedor */
+		}
+   /* Ajusta el espaciado de los enlaces de navegación en pantallas pequeñas */
+		.nav-link {
+		  padding: 5px 0; /* Añade un espaciado de 5 píxeles arriba y abajo de cada enlace */
+		}
+	  }
+     /* Ajuste del carrucel */
+	  .carousel-inner img {
+		max-height: 500px; /* Limitar la altura para dispositivos pequeños */
+		object-fit: cover; /* Asegura que las imágenes se ajusten correctamente */
+	  }
+      /* Ajuste del carrucel */
+	  @media (max-width: 768px) {
+		.carousel-inner img {
+		  max-height: 300px; /* Reducir la altura en dispositivos más pequeños */
+		}
+	  }
+	  .card-img-top {
+		max-height: 300px;
+		object-fit: cover; /* Ajusta la imagen dentro de la tarjeta */
+	  }
+  
+	  .modal-body img {
+		max-width: 100%;
+		height: auto; /* Las imágenes dentro del modal serán responsivas */
+	  }
+  
+	  table {
+		width: 100%; /* La tabla ocupa todo el ancho en pantallas pequeñas */
+	  }
+     /* Estilos para las celdas de las tablas (th y td) */
+	  th, td {
+		text-align: center; /* Centra el texto dentro de las celdas de las tablas */
+		padding: 8px; /* Añade un espaciado de 8 píxeles dentro de las celdas para mejorar la legibilidad */
+	}
+	  }
+    
+	  @media (max-width: 768px) {
+		.card {
+		  margin-bottom: 20px; /* Añade espacio entre tarjetas en pantallas pequeñas */
+		}
+    
+		table th, table td {
+		  font-size: 12px; /* Reduce el tamaño de la fuente de la tabla en móviles */
+		}
+		footer {
+			background-color: #dc3545; /* Fondo rojo Bootstrap */
+			color: #ffffff;
+		  }
+	  
+		  footer h5 {
+			color: #f8d7da; /* Rosa claro para los títulos */
+		  }
+	  /* Estilos para los enlaces dentro del footer en su estado normal (sin interacción) */
+		  footer a {
+			text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+			color: #ffffff; /* Establece el color del texto de los enlaces a blanco (#ffffff) */
+		  }
+	  /* Estilos para los enlaces dentro del footer cuando el usuario pasa el mouse sobre ellos */
+		  footer a:hover {
+			text-decoration: underline; /* Añade un subrayado a los enlaces cuando el usuario pasa el mouse sobre ellos */
+			color: #f8d7da; /* Cambia el color del enlace a un tono de rosa claro cuando se pasa el mouse */
+		  }
+	  /* Estilos para las imágenes dentro de los iconos de redes sociales en el footer */
+		  footer .social-icons img {
+			width: 40px; /* Establece el ancho de las imágenes en 40 píxeles */
+			height: 40px;  /* Establece la altura de las imágenes en 40 píxeles, creando imágenes cuadradas */
+			margin-right: 8px; /* Añade un espacio de 8 píxeles a la derecha de cada imagen para separarlas */
+			transition: transform 0.2s ease;/* Aplica una transición suave de 0.2 segundos cuando se cambie la propiedad "transform" */
+		  }
+		  footer .social-icons img:hover {
+			transform: scale(1.1); /* Efecto zoom al pasar el mouse */
+		  }
+	
+		  @media (max-width: 768px) {
+			footer .row { /*Selecciona cualquier elemento con la clase */ 
+			/*footer se utiliza para contener las columnas y organizar el contenido en un diseño de rejilla*/
+			  text-align: center;/*centrado de texto dentro de los elementos*/
+			}
+			footer .col-md-3,
+			footer .col-md-2,
+			footer .col-md-4 {
+			  margin-bottom: 20px;
+			}
+		}
+        .burbujas div {
+            width: 20px;
+            height: 20px;
+            background-color: #d82642;
+            border-radius: 50%;
+            animation: float 4s infinite;
+          }
+          @keyframes float {
+            0% { transform: translateY(0); }   /* Inicio: en su posición original */
+            50% { transform: translateY(-20px); }/* Mitad: se mueve 20px hacia arriba */
+            100% { transform: translateY(0); }  /* Fin: vuelve a la posición original */
+          }
+          .field-container input, .field-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
+          .field-container label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+		  }

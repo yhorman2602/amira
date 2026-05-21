@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Pacifico&family=Yatra+One&display=swap');
+body{
+	background-color: #fce9f1;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* ********************************** */
+/*            card imagen de prendas              */
+/* ********************************** */
+.card-feature {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2.5rem;
+
+}
+
+/*               FOOTER               */
+h4{
+	color: #d82642;
+}
+/* Estilo para los enlaces */
+.nav-link {
+	color: #fff; /* Establece el color del texto de los enlaces (azul claro) */
+	text-decoration: none; /* Elimina el subrayado de los enlaces */
+	font-weight: 600; /* Define el peso de la fuente para darle más énfasis */
+	padding: 8px 16px; /* Espaciado alrededor del texto */
+	border-radius: 4px; /* Bordes redondeados */
+	
+  }
+  /* Efecto de cambio de color ICONOS */
+.nav-link:hover {
+	color: #d82642; /* Cambia el color del texto a un tono oscuro cuando se pasa el ratón */
+	background-color: #ecf0f1; /* Fondo gris claro cuando se pasa el ratón */
+  }
+/* tEXTO DE HISTORIA  */
+.contenedor {
+	width: 80%;               /* Ancho del contenedor, ajustable según el espacio */
+	margin: 0 auto;           /* Centra el contenedor en la página */
+	padding: 20px;            /* Espaciado interno para que no quede pegado al borde */
+	text-align: center;       /* Centra el texto dentro del contenedor */
+	display: flex;            /* Usa flexbox para permitir imágenes a los lados */
+	justify-content: space-between; /* Crea espacio entre las imágenes y el texto */
+	align-items: center;      /* Alinea el contenido verticalmente */
+  }
+
+  /* formulario de contactanos */
+  form{
+    background-color:#fce9f1;
+    font-size: 0.8em;
+    padding: 20px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+  /* CONTACTOS LOS ESPACIOS DE LA BARRA  */
+.field{
+    border: solid 1px #ccc;
+    border-radius: 0 4px 4px 0; 
+    padding: 10px;
+    width: 240px;
+}
+
+/* CONTACTOS PARA MOVER A LOS COSTADOS DE UNA COLUMNA */
+#contacto .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 20px; /* Espacio entre la columna de texto y el formulario */
+  }
+  
+
+ 
+  
+/* BOTONES */
+.btn{
+	
+	background-color: #d82642;
+	color: white;
+}
+
+
+
+/* ********************************** */
+/*          modal1 talla              */
+/* ********************************** */
+
+.container {
+    border: solid 1px rgba(255, 255, 255, 0.2);
+	
+}
+
+table {
+    color: #fff;
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+	background: linear-gradient(#b7328d, #ac18c0);
+}
+
+/* dISEÑO E LA TABLA DE LAS TALLAS DE VESTIDOS Y ZAPATOS  */
+td {
+    padding: 15px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+/* CURSOR DEL MOUS EN LA TABLA PARA QUE SE VISUALISE EL COLOR QUE LO ESTAS ASIGNANDO */
+tbody tr:hover {
+    background: rgba(243, 103, 199, 0.4);
+}
+
+  
+
+ 

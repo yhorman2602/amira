@@ -1,0 +1,28 @@
+h2{
+height: 100px;
+width: 100%;
+border-radius:  25px 25px 25px 0 ;
+  }
+h5{ 
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-center{
+  
+  justify-content: center;
+  font-family: "Yatra One", system-ui;
+  display: flex;
+  align-items: center;
+}
+.Imagen1{
+   border: 20px solid #df95b4; 
+
+}
+h6{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+	color: #d82642;
+ 
+}
